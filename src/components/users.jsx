@@ -5,7 +5,6 @@ const Users = () => {
   const [users, setUsers] = useState(api.users.fetchAll());
   const renderPhrase = (number) => {
     const lastOne = Number(number.toString().slice(-1));
-    console.log(lastOne);
     if ((number > 4 && number < 15) || number === 1) {
       return "Человек тусанет";
     } else if ([2, 3, 4].indexOf(lastOne) >= 0) {
